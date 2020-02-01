@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="129731" started-at="2020-02-01T19:42:17Z" finished-at="2020-02-01T19:44:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="129731" started-at="2020-02-01T19:42:17Z" finished-at="2020-02-01T19:44:27Z">
+      <class name="com.tripsdvisor.script.SubmitReviewTest">
+        <test-method status="PASS" signature="configBC()[pri:0, instance:com.tripsdvisor.script.SubmitReviewTest@9629756]" name="configBC" is-config="true" duration-ms="7795" started-at="2020-02-02T01:12:17Z" finished-at="2020-02-02T01:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:com.tripsdvisor.script.SubmitReviewTest@9629756]" name="configBM" is-config="true" duration-ms="43323" started-at="2020-02-02T01:12:25Z" finished-at="2020-02-02T01:13:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="submitReviewTripAdvisorTest()[pri:0, instance:com.tripsdvisor.script.SubmitReviewTest@9629756]" name="submitReviewTripAdvisorTest" duration-ms="77869" started-at="2020-02-02T01:13:08Z" finished-at="2020-02-02T01:14:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitReviewTripAdvisorTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.tripsdvisor.script.SubmitReviewTest@9629756]" name="configAM" is-config="true" duration-ms="1" started-at="2020-02-02T01:14:26Z" finished-at="2020-02-02T01:14:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAT()[pri:0, instance:com.tripsdvisor.script.SubmitReviewTest@9629756]" name="configAT" is-config="true" duration-ms="727" started-at="2020-02-02T01:14:26Z" finished-at="2020-02-02T01:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAT -->
+      </class> <!-- com.tripsdvisor.script.SubmitReviewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
