@@ -19,33 +19,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  *
  */
 public class WebDriverUtils {
-	/**
-	 *Its is method for random values 
-	 * @return
-	 */
-	public int randomNumber() {
-		Random ran = new Random();
-		return ran.nextInt(10000);
-	}
-	/**
-	 * used for select class and use the argument visible text 
-	 * @param element
+	
 
-	 * @param option
-	 */
-	public void select(WebElement element, String option) {
-		Select sel = new Select(element);
-		sel.selectByVisibleText(option);
-	}
-	/**
-	 * used for select class and use the argument index value
-	 * @param element
-	 * @param optionInt
-	 */
-	public void select(WebElement element , int optionInt) {
-		Select sel = new Select(element);
-		sel.selectByIndex(optionInt);
-	}
 	/**
 	 * used for implicitly wait
 	 * @param driver
@@ -71,33 +46,6 @@ public class WebDriverUtils {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-	/**
-	 * This method is use to wait for element to be clickable
-	 * @param driver
-	 * @param element
-	 * @throws InterruptedException 
-	 */
-	public void waitForElementAndClick(WebDriver driver , WebElement element ) throws InterruptedException {
-		int count =  0;
-		while(count <= 20) {
-			try {
-				element.click();
-				break;
-			}
-			catch (Throwable e) {
-				Thread.sleep(1000);
-				count++;
-			}
-		}
-	}
-	 /**
-	  * This method is use to double click
-	  * @param driver
-	  */
-	public void actionForDoubleClick(WebDriver driver ) {
-		Actions act = new Actions(driver);
-		act.doubleClick().perform();
-	}
 /**
  * This method is used to move from one element to another element in x axis
  * @param driver
@@ -110,13 +58,13 @@ public class WebDriverUtils {
 	public void actionForMoveToElement(WebDriver driver, WebElement element) throws InterruptedException {
 		Actions act = new Actions(driver);
 		int i ;
-		for( i = 0 ; i < 50 ; ) {
+		for( i = 0 ; i <50 ; ) {
 		 act.moveToElement(element, i , 1).perform();
 		 Thread.sleep(1000);
 		 i = i + 10;
 		}
 		if(i<=50) {
-			act.moveToElement(element, 50, 1).click().perform();
+			act.moveToElement(element, i, 1).click().perform();
 		}
 	}
 	/**
@@ -128,20 +76,7 @@ public class WebDriverUtils {
 		Actions act = new Actions(driver);
 		act.moveToElement(element).perform();;
 	}
-	/**
-	 * This method is use to click on accept in alert popup
-	 * @param driver
-	 */
-	public void alertPopUpForAccept(WebDriver driver) {
-		driver.switchTo().alert().accept();
-	}
-	/**
-	 * This method is use to click on cancel in alert popup
-	 * @param driver
-	 */
-	public void alertPopUpForDismiss(WebDriver driver) {
-		driver.switchTo().alert().dismiss();
-	}
+	
 		static String parentWind;
 	    static String childWind;
 	/**
